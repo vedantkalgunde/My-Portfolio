@@ -564,7 +564,7 @@ body.light-theme .sty,
 }
 
 #theme-toggle:checked+.theme-toggle-switch .sun {
-  color: #b74b4b;
+  color: #999;
 }
 
 
