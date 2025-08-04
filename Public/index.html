@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist/bootstrap-5.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="llogo.png">
+
+    <title>Vedant | Portfolio</title>
+</head>
+
+<body class="dark-theme">
+
+
+    <header>
+        <a href="#" class="logo navbar-brand">
+            <img src="logo2.png" alt="Vedant Kalgunde Logo" class="logo-img" />
+        </a>
+
+
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#achievement">Achievements</a>
+            <a href="#experience">Experience</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Theme Toggle Button -->
+        <div class="theme-toggle-wrapper">
+            <input type="checkbox" id="theme-toggle" />
+            <label for="theme-toggle" class="theme-toggle-switch">
+                <span class="icon moon"><i class="fas fa-moon"></i></span>
+                <span class="icon sun"><i class="fas fa-sun"></i></span>
+                <span class="ball"></span>
+            </label>
+        </div>
+
+
+
+
+        <div class="menu-toggle " id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+
+        <!-- ✅ Bootstrap Offcanvas Menu for Mobile -->
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileNavLabel">Menu</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column text-center">
+                <a href="#home" class="nav-link mb-3">Home</a>
+                <a href="#about" class="nav-link mb-3">About Me</a>
+                <a href="#education" class="nav-link mb-3">Education</a>
+                <a href="#achievement" class="nav-link mb-3">Achievements</a>
+                <a href="#experience" class="nav-link mb-3">Experience</a>
+                <a href="#testimonials" class="nav-link mb-3">Testimonials</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+
+
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-img">
+            <div class="orbit"></div>
+            <img src="Vedant Kalgunde.jpg" alt="Vedant Image" />
+        </div>
+
+        <div class="home-content">
+            <h1>Hi, It's <span>Vedant</span></h1>
+            <h3 class="typing-text">I'm a &nbsp; <span id="typed-text"></span></h3>
+            <p>Welcome to my portfolio. I specialize in crafting sleek web interfaces and dynamic web experiences. Let's
+                build something amazing!</p>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/vedantkalgunde/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#" class="btn1 me-2 m-2">Hire me</a>
+            <a href="Vedant_Kalgunde_Resume.docx" class="btn1 m-2">Download Resume</a>
+        </div>
+    </section>
+
+
+
+    <!-- About Me Section with Skills and Animation -->
+    <section class="about" id="about">
+        <h2 class="heading" data-aos="fade-down">About Me</h2>
+
+        <div class="about-wrapper">
+            <div class="about-img" data-aos="zoom-in-up">
+                <img src="Vedant Kalgunde2.jpg" alt="Vedant Image" />
+            </div>
+
+            <div class="about-text" data-aos="fade-left">
+                <h3>I'm Vedant Kalgunde</h3>
+                <p>
+                    A passionate Diploma Student in Computer Science & IT. I love turning ideas into beautifully crafted
+                    web interfaces using modern technologies.
+                    Always curious, always building.
+                </p>
+                <p>
+                    I specialize in front-end development with a growing interest in full-stack technologies.
+                </p>
+            </div>
+        </div>
+
+        <h3 class="skills-heading" data-aos="fade-up">Tech Stack</h3>
+        <div class="skills-icons" data-aos="zoom-in-up">
+            <div class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"
+                    title="HTML5" />
+            </div>
+            <div class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"
+                    title="CSS3" />
+            </div>
+            <div class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="JavaScript" title="JavaScript" />
+            </div>
+            <div class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle DB"
+                    title="Oracle Database" />
+            </div>
+            <div class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"
+                    title="MySQL" />
+            </div>
+            <div class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"
+                    title="Python" />
+            </div>
+            <div class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"
+                    title="Linux" />
+            </div>
+            <div class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                    alt="Bootstrap" title="Bootstrap 5" />
+            </div>
+            <div class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
+                    title="React JS" />
+            </div>
+            <div class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node"
+                    title="Node JS" />
+            </div>
+
+
+            <!-- Added Skills -->
+
+
+
+            <div class="skill-icon">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
+                    title="GitHub" />
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education Section Starts -->
+    <section class="education-section" id="education">
+        <h2 class="heading" data-aos="fade-down">Education</h2>
+        <div class="timeline-container">
+
+            <div class="timeline-item left reveal">
+                <div class="timeline-content">
+                    <h3>2023</h3>
+                    <h4>High School</h4>
+                    <p class="para">
+                        Completed secondary education with distinction. Strong foundation in Mathematics and Science.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item right reveal">
+                <div class="timeline-content">
+                    <h3>2023</h3>
+                    <h4>Diploma 1st Year</h4>
+                    <p class="para">
+                        Core programming knowledge in HTML, C, basic networking, and computer architecture.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item left reveal">
+                <div class="timeline-content">
+                    <h3>2024</h3>
+                    <h4>Diploma 2nd Year</h4>
+                    <p class="para">
+                        Learned OOP in Java, OS, InfoSec & front-end design.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item right reveal">
+                <div class="timeline-content">
+                    <h3>2025</h3>
+                    <h4>3rd Year (In Progress)</h4>
+                    <p class="para">
+                        Working on React.js, Node.js, MySQL projects. Building final year project and portfolio.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Achievements / Certifications Section -->
+    <section class="certifications" id="achievement">
+        <h2 class="heading">Achievements & Certifications</h2>
+        <div class="cert-grid">
+            <div class="cert-tile">
+                <div class="cert-ribbon">SIMPLILEARN</div>
+                <div class="cert-content">
+                    <h3>Build Website with AI Tools</h3>
+                    <p>Used modern AI tools like ChatGPT, Leonardo, Ideogram</p>
+                    <a href="Build-Website-With-Ai.pdf" class="btn btn-view-animated mt-2" target="_blank">
+                        <i class="fas fa-external-link-alt me-1"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+            <div class="cert-tile">
+                <div class="cert-ribbon">UDEMY</div>
+                <div class="cert-content">
+                    <h3>ChatGPT: Complete Bootcamp for Beginners</h3>
+                    <p>Instructor: Arbaz Khan | Aug 2, 2025 | 2 hours</p>
+                    <a href="chatGpt.pdf" class="btn btn-view-animated mt-2" target="_blank">
+                        <i class="fas fa-external-link-alt me-1"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+
+            <div class="cert-tile">
+                <div class="cert-ribbon">UDEMY</div>
+                <div class="cert-content">
+                    <h3>Node.js: All You Need to Know</h3>
+                    <p>Project-based backend bootcamp</p>
+                    <a href="NodeJs.pdf" class="btn btn-view-animated mt-2" target="_blank">
+                        <i class="fas fa-external-link-alt me-1"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="cert-tile">
+                <div class="cert-ribbon">NPTEL</div>
+                <div class="cert-content">
+                    <h3>Computer Networks and Internet Protocol</h3>
+                    <p>12-week course | Jan–Apr 2024</p>
+                    <a href="Computer Networks And Internet Protocol.pdf" class="btn btn-view-animated mt-2"
+                        target="_blank">
+                        <i class="fas fa-external-link-alt me-1"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+
+            <div class="cert-tile">
+                <div class="cert-ribbon">NPTEL</div>
+                <div class="cert-content">
+                    <h3>Ethical Hacking</h3>
+                    <p>12-week course | Jul–Oct 2024</p>
+                    <a href="Ethical Hacking.pdf" class="btn btn-view-animated mt-2" target="_blank">
+                        <i class="fas fa-external-link-alt me-1"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+
+            <div class="cert-tile">
+                <div class="cert-ribbon">NPTEL</div>
+                <div class="cert-content">
+                    <h3>Introduction to Internet of Things</h3>
+                    <p>12-week course | Jan–Apr 2025</p>
+                    <a href="Introduction To Internet Of Things.pdf" class="btn btn-view-animated mt-2" target="_blank">
+                        <i class="fas fa-external-link-alt me-1"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Expereience  -->
+    <section class="experience-section" id="experience">
+        <h2 class="heading">Experience</h2>
+
+        <div class="experience-card reveal-from-bottom">
+            <div class="icon-area">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="content-area">
+                <h3>Web Development Intern</h3>
+                <p class="company">Comtranse Technology, Kolhapur <span>| June – August 2025</span></p>
+                <p class="para">
+                    Designed and developed responsive web applications using <strong>HTML, CSS, JavaScript, bootstrap-5
+                        and
+                        React.js</strong>.
+                    Gained hands-on experience in frontend development, UI design, and client-focused project delivery.
+                </p>
+            </div>
+        </div>
+
+        <div class="experience-card reveal-from-bottom">
+            <div class="icon-area">
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="content-area">
+                <h3>Wedding Planner Website</h3>
+                <p class="company">Practice Work<span>| June 2025</span></p>
+                <p class="para">
+                    Created a fully responsive <strong>Wedding Planner website</strong> using <strong>HTML, CSS, and
+                        Bootstrap 5</strong>.
+                    Focused on elegant layout, modern design patterns, smooth animations, and mobile responsiveness.
+                    <br />
+                    <a href=" https://vedantkalgunde.github.io/Wedding-planner/" target="_blank" class="custom-link">
+                        <i class="fas fa-external-link-alt text-info"></i> View Live Project (Click to see)</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="experience-card reveal-from-bottom">
+            <div class="icon-area">
+                <i class="fas fa-pencil-ruler"></i>
+            </div>
+            <div class="content-area">
+                <h3>Website Template Customization</h3>
+                <p class="company"> Practice Work <span>| July 2025</span></p>
+                <p class="para">
+                    Edited and customized multiple modern HTML/CSS templates to improve UI/UX, performance, and match
+                    client requirements.
+                    Gained experience in working with <strong>UI kits, responsiveness, animations</strong>, and
+                    cross-browser compatibility.
+                    <br />
+                    <a href="Template/MediLab-1.0.0/lifeline.html" target="_blank" class="custom-link">
+                        <i class="fas fa-external-link-alt text-info"></i> Check Template Work (Click to see)
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="experience-card reveal-from-bottom">
+            <div class="icon-area">
+                <i class="fa-regular fa-flag"></i>
+            </div>
+            <div class="content-area">
+                <h3>13 D पन्हाळगडचा रणसंग्राम</h3>
+                <p class="company">Live Project<span>| August 2025 – Ongoing</span></p>
+                <p class="para">
+                    Building a fully responsive <strong>13D theater website</strong> for a real-world company using
+                    <strong>HTML, CSS, and Bootstrap 5</strong>.
+                    Focused on elegant layout, modern UI/UX patterns, responsive design, and performance optimization.
+                    <br />
+                     <a href="#" class="custom-link">
+                        <i class="fas fa-lock text-warning me-1 text-info"></i>  Project under development – link will be shared
+                        after launch.
+                    </a>
+                    
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="container-fluid contact-container">
+            <div class="row align-items-center justify-content-center">
+
+                <!-- Left: Contact Form -->
+                <div class="col-lg-6 form-area" data-aos="fade-right">
+                    <h2>Let's <span>talk</span></h2>
+                    <p class="text1">Drop a message or connect via social handles.</p>
+                    <form class="contact-form" id="contact-form" action="/contact" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="tel" placeholder="Your Mobile No." required>
+                        <input type="email" name="email" placeholder="Your Email (Optional)">
+                        <textarea rows="4" name="message" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+
+                    <!-- Contact Detailsss -->
+                    <div class="contact-info-box">
+                        <a href="mailto:vedantvk1221@gmail.com" class="contact-item animated-contact" target="_blank">
+                            <i class="fas fa-envelope sty"></i> <span class="sty">Email: vedantvk1221@gmail.com</span>
+                        </a>
+                        <a href="tel:+919673480504" class="contact-item animated-contact">
+                            <i class="fas fa-phone sty"></i> <span class="sty">Call: +91 9673480504</span>
+                        </a>
+                        <a href="https://www.google.com/maps/place/Kabnur,+Ichalkaranji,+Maharashtra+416116/"
+                            class="contact-item animated-contact" target="_blank">
+                            <i class="fas fa-map-marker-alt sty"></i> <span class="sty">Kabnur, Ichalkaranji</span>
+                        </a>
+                    </div>
+
+
+
+
+
+                </div>
+
+                <!-- Right: Image with Curve -->
+                <div class="col-lg-6 image-area" data-aos="zoom-in">
+                    <div class="image-blob">
+                        <img src="Vedant Kalgunde.jpg" alt="Profile Image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="custom-footer">
+        <div class="footer-container">
+            <!-- Left Side Logo -->
+            <div class="footer-logo-box">
+                <img src="logo2.png" alt="Vedant Logo" class="footer-logo" />
+            </div>
+
+            <!-- Right Side Content -->
+            <div class="footer-content">
+                <h2 class="footer-name">Vedant Kalgunde</h2>
+
+                <ul class="footer-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/vedantkalgunde/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+
+                <p class="footer-copy">© 2025 Vedant Kalgunde. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+    <script>
+        const toggle = document.getElementById("theme-toggle");
+        if (toggle) {
+            toggle.addEventListener("change", () => {
+                const isLight = toggle.checked;
+                document.body.classList.toggle("light-theme", isLight);
+                document.body.classList.toggle("dark-theme", !isLight);
+            });
+        }
+
+    </script>
+
+
+
+    <!-- 
+    <script>
+        const body = document.body;
+        const toggleDesktop = document.getElementById("theme-toggle");
+        const toggleMobile = document.getElementById("theme-toggle-mobile");
+
+        function syncThemeToggle(sourceToggle) {
+            const isLight = sourceToggle.checked;
+            body.classList.toggle("light-theme", isLight);
+            body.classList.toggle("dark-theme", !isLight);
+            // Sync both toggles
+            toggleDesktop.checked = isLight;
+            toggleMobile.checked = isLight;
+        }
+
+        toggleDesktop.addEventListener("change", () => syncThemeToggle(toggleDesktop));
+        toggleMobile.addEventListener("change", () => syncThemeToggle(toggleMobile));
+    </script> -->
+
+
+
+    <!-- <script>
+        const themeToggle = document.getElementById("theme-toggle");
+        const body = document.body;
+
+        themeToggle.addEventListener("change", () => {
+            body.classList.toggle("light-theme");
+            body.classList.toggle("dark-theme");
+        });
+    </script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        const revealElements = document.querySelectorAll('.reveal, .reveal-from-bottom');
+
+        const intersectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                    entry.target.classList.remove('show'); // remove to re-animate when coming back
+                }
+            });
+        }, {
+            threshold: 0.2
+        });
+
+        revealElements.forEach((el) => {
+            intersectionObserver.observe(el);
+        });
+    </script>
+
+
+    <script>
+        const typedText = document.getElementById("typed-text");
+        const words = [" IT Engineer", "Frontend Dev", " Web Dev", "Web Designer"];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typingSpeed = 200;
+
+        function type() {
+            const currentWord = words[wordIndex];
+            if (isDeleting) {
+                typedText.textContent = currentWord.substring(0, charIndex--);
+            } else {
+                typedText.textContent = currentWord.substring(0, charIndex++);
+            }
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                isDeleting = true;
+                typingSpeed = 200;
+                setTimeout(type, 1000); // pause before deleting
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                typingSpeed = 120;
+                setTimeout(type, 500); // pause before typing next
+            } else {
+                setTimeout(type, typingSpeed);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", type);
+    </script>
+
+
+
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+
+        menuToggle.addEventListener("click", () => {
+            const offcanvasEl = document.getElementById('mobileNav');
+            const bsOffcanvas = new bootstrap.Offcanvas(offcanvasEl);
+            bsOffcanvas.show();
+        });
+    </script>
+
+
+
+
+    <!-- This is the Connection code to MYSQL -->
+    <script>
+        const form = document.getElementById("contact-form");
+
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const formData = {
+                name: form.name.value,
+                email: form.email.value,
+                message: form.message.value,
+            };
+
+            const res = await fetch("http://localhost:5500/api/contact_form", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData),
+            });
+
+            const data = await res.text();
+            alert(data);
+            form.reset();
+        });
+    </script>
+    <!-- Js for Navbar Activeness -->
+    <script>
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll("nav a");
+
+        window.addEventListener("scroll", () => {
+            let current = "";
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove("active");
+                if (link.getAttribute("href") === "#" + current) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>

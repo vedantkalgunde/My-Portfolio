@@ -1,0 +1,147 @@
+
+/* Root Variables */
+:root {
+  --default-font: "Roboto", sans-serif;
+  --heading-font: "Poppins", sans-serif;
+  --nav-font: "Raleway", sans-serif;
+  --background-color: #ffffff;
+  --default-color: #444444;
+  --heading-color: #2c3e50;
+  --accent-color: #2bb9a9;
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+/* General Styles */
+body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #22998b;
+}
+
+/* Header & Topbar */
+.header {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.header .topbar {
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 14px;
+  padding: 6px 0;
+}
+
+.header .topbar .contact-info,
+.header .topbar .social-links {
+  display: flex;
+  align-items: center;
+}
+
+.header .topbar a {
+  color: #ffffff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+  .header .topbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header .topbar .contact-info {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .header .topbar .social-links {
+    justify-content: center;
+    margin-top: 8px;
+  }
+}
+
+/* Branding */
+.brand-logo {
+  font-family: var(--heading-font);
+  font-size: 30px;
+  font-weight: 700;
+  color: #0c2340;
+}
+
+.brand-logo span {
+  color: var(--accent-color);
+}
+
+/* CTA Button */
+.cta-btn {
+  background: var(--accent-color);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background: #22998b;
+}
+
+/* Navbar */
+.navmenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navmenu ul li a {
+  font-weight: 500;
+  color: var(--heading-color);
+}
+
+.navmenu ul li a:hover,
+.navmenu ul li .active {
+  color: var(--accent-color);
+}
+
+/* Dropdown */
+.navmenu .dropdown ul {
+  display: none;
+  position: absolute;
+  background: #fff;
+  padding: 10px 0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 99;
+}
+
+.navmenu .dropdown:hover > ul {
+  display: block;
+}
+
+.navmenu .dropdown ul li a {
+  padding: 10px 20px;
+  display: block;
+  color: #333;
+}
+
+/* Responsive Branding */
+@media (max-width: 768px) {
+  .branding {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cta-btn {
+    margin-top: 10px;
+  }
+}
